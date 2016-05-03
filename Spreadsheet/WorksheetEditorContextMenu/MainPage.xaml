@@ -60,6 +60,14 @@
                                          Command="{Binding Path=ContextMenuRemoveRows.Command}"
                                          Visibility="{Binding Path=ContextMenuRemoveRows.IsEnabled, Mode=TwoWay, Converter={StaticResource BoolToVisibilityValueConverter}}"/>
 
+                    <telerik:RadMenuItem Header="Insert Columns"
+                                         Command="{Binding Path=ContextMenuInsertColumns.Command}"
+                                         Visibility="{Binding Path=ContextMenuInsertColumns.IsEnabled, Mode=TwoWay, Converter={StaticResource BoolToVisibilityValueConverter}}"/>
+
+                    <telerik:RadMenuItem Header="Delete Columns"
+                                         Command="{Binding Path=ContextMenuRemoveColumns.Command}"
+                                         Visibility="{Binding Path=ContextMenuRemoveColumns.IsEnabled, Mode=TwoWay, Converter={StaticResource BoolToVisibilityValueConverter}}"/>
+
                     <telerik:RadMenuItem Header="Clear Contents" 
                                          Command="{Binding Path=Clear.Command}"
                                          CommandParameter="Contents"
@@ -75,6 +83,22 @@
                             <Image Source="{telerik:IconResource IconRelativePath=16/formatCells.png, IconSources={StaticResource IconPaths}}" Width="16" Stretch="None" />
                         </telerik:RadMenuItem.Icon>
                     </telerik:RadMenuItem>
+
+                    <telerik:RadMenuItem Header="Hide"
+                                         Command="{Binding Path=ContextMenuHideColumns.Command}"
+                                         Visibility="{Binding Path=ContextMenuHideColumns.IsEnabled, Mode=TwoWay, Converter={StaticResource BoolToVisibilityValueConverter}}"/>
+
+                    <telerik:RadMenuItem Header="Unhide"
+                                         Command="{Binding Path=ContextMenuUnhideColumns.Command}"
+                                         Visibility="{Binding Path=ContextMenuUnhideColumns.IsEnabled, Mode=TwoWay, Converter={StaticResource BoolToVisibilityValueConverter}}"/>
+
+                    <telerik:RadMenuItem Header="Hide"
+                                         Command="{Binding Path=ContextMenuHideRows.Command}"
+                                         Visibility="{Binding Path=ContextMenuHideRows.IsEnabled, Mode=TwoWay, Converter={StaticResource BoolToVisibilityValueConverter}}"/>
+
+                    <telerik:RadMenuItem Header="Unhide"
+                                         Command="{Binding Path=ContextMenuUnhideRows.Command}"
+                                         Visibility="{Binding Path=ContextMenuUnhideRows.IsEnabled, Mode=TwoWay, Converter={StaticResource BoolToVisibilityValueConverter}}"/>
 
                     <telerik:RadMenuItem Command="{Binding Path=ShowHyperlinkDialog.Command}"
                                          Header="Hyperlink..."

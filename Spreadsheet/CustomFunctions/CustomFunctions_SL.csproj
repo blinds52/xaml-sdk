@@ -107,9 +107,6 @@
     <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf">
       <HintPath>$(TELERIKSLDIR)\Binaries\Silverlight\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Maths">
-      <HintPath>$(TELERIKSLDIR)\Binaries\Silverlight\Telerik.Windows.Maths.dll</HintPath>
-    </Reference>
     <Reference Include="Telerik.Windows.Zip">
       <HintPath>$(TELERIKSLDIR)\Binaries\Silverlight\Telerik.Windows.Zip.dll</HintPath>
     </Reference>
@@ -121,6 +118,7 @@
     <Compile Include="Functions\Arguments.cs" />
     <Compile Include="Functions\E.cs" />
     <Compile Include="Functions\GeoMean.cs" />
+    <Compile Include="Functions\Indirect.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
